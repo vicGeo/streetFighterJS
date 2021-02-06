@@ -16,7 +16,7 @@ class Fighter {
     }
 
     specialAttack(enemy) {
-        enemy.life -= (this.strength * 0.5) - enemy.defense;
+        enemy.life -= (this.strength + this.luck) - enemy.defense;
     }
 
 };
@@ -28,14 +28,14 @@ let fighter1 = new Fighter("Ryu",250,60,35,7);
 let fighter2 = new Fighter("Ken",250,60,30,6);
 let fighter3 = new Fighter("Chunli",250,40,25,6);
 let fighter4 = new Fighter("Blanka",250,60,20,4);
-let fighter5 = new Fighter("Zangief",250,60,10,4);
+let fighter5 = new Fighter("Zangief",250,60,20,4);
 let fighter6 = new Fighter("Guile",250,50,35,6);
 let fighter7 = new Fighter("Honda",250,60,20,3);
-let fighter8 = new Fighter("Dhalsim",250,40,50,5);
-let fighter9 = new Fighter("Balrog",250,60,40,8);
-let fighter10 = new Fighter("Vega",250,55,50,5);
-let fighter11 = new Fighter("Sagat",250,60,50,7);
-let fighter12 = new Fighter("Bison",250,70,70,5);
+let fighter8 = new Fighter("Dhalsim",250,40,30,5);
+let fighter9 = new Fighter("Balrog",250,60,40,6);
+let fighter10 = new Fighter("Vega",250,55,45,5);
+let fighter11 = new Fighter("Sagat",250,60,50,5);
+let fighter12 = new Fighter("Bison",250,70,50,5);
 
 let player1 = "";
 
@@ -105,9 +105,13 @@ let selectCharacter = (character) => {
 
         showPlayer1 = document.getElementById("battle1");
         showPlayer2 = document.getElementById("battle2");
+        battlePlayer1 = document.getElementById("battleNameP1")
+        battlePlayer2 = document.getElementById("battleNameP2")
 
-        showPlayer1.innerHTML = `<img class="fighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
-        showPlayer2.innerHTML = `<img class="fighter1" src="img/characters/player2/${player2.name}-stay-p2.gif">`
+        showPlayer1.innerHTML = `<img class="battleFighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
+        showPlayer2.innerHTML = `<img class="battleFighter2" src="img/characters/player2/${player2.name}-stay-p2.gif">`
+        battlePlayer1.innerHTML = `<img class=battleImageP1" src="img/${player1.name}_name.png">`
+        battlePlayer2.innerHTML = `<img class=battleImageP2" src="img/${player2.name}_name.png">`
 
         //LLamamos a la funcion delay para cambiar de pantalla con 1s de retraso
 
@@ -147,9 +151,20 @@ const damage = () => {
             infoAttack.innerHTML = `${player1.name} hits ${player2.name}`;
         }
     };
+
+
     // console.log(player1.life);
     // console.log(player2.life);
+    healthPlayer1.value = `${player1.life}`;
+    healthPlayer2.value = `${player2.life}`;
+    fighterWin();
+
+};
+
+
 //Barra de vida del jugador
+
+const fighterWin = () => {
 
 winner = document.getElementById("playerWin");
 winnerName = document.getElementById("nameWinner");
@@ -177,14 +192,10 @@ if (player2.life < 1) {
 
         })
 
-    } else {
-
-        healthPlayer1.e = `${player1.life}`;
-        healthPlayer2.e = `${player2.life}`;
-
-    };
+    }
 
 };
+
 
 
 //Funcion RESET

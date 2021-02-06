@@ -100,32 +100,38 @@
                 <div class="container-fuid">
                     <div class="row">
                         <div class="healthPlayer" id="healthPlayer">
-                            <div class="healthPlayer1">HEALTH PLAYER 1</div>
-                            <div class="healthPlayer2">HEALTH PLAYER 2</div>
+                            <div class="healthPlayer1"><progress id="healthPlayer1" value="250" min="0"
+                                    max="250"></progress></div>
+                            <div class="healthPlayer2"><progress id="healthPlayer2" value="250" min="0"
+                                    max="250"></progress></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12 battlePlayer" id="battle">
-                            <div class="battle1" id="battle1">
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="infoPlayer" id="infoPlayer"></div>
-                                <div class="buttonAttack" id="buttonAttack" onclick="damage()">
-                                    <img src="img/attackPunch.png" alt="">
+                    <div class="row col-sm-12" id="battle">
+                        <div class="battleArena" id="battleArena">
+                            <div class="arena">
+                                <div class="battleName">
+                                    <div id="battleNameP1"></div>
+                                    <div id="battleNameP2"></div>
+                                </div>
+                                <div class="punch">
+                                    <div class="battleFighter">
+                                        <div id="battle1"></div>
+                                    </div>
+                                    <div class="textAttack">
+                                        <div class="infoPlayer" id="infoPlayer"></div>
+                                    <div class="buttonAttack" id="buttonAttack" onclick="damage()">
+                                        <img src="img/attackPunch.png" alt="">
+                                    </div>
+                                    </div>
+                                    
+                                    <div id="battle2"></div>
+
                                 </div>
                             </div>
-                            <div class="battle2" id="battle2"></div>
-
                         </div>
-                    </div>
-                    <div class="row">
-
-                    </div>
-                    <div class="row">
-
                     </div>
                 </div>
             </div>
@@ -136,13 +142,16 @@
     <div class="container-fluid screen04" id="fase4" style="display: none;">
         <div class="row">
             <div class="screen04">
-                <div id="playerWin"></div>
-                <div id="nameWinner"></div>
-                <div id="gifWinner"></div>
-            </div>
-            <div class="row">
-                <div class="imageContinue">
-                    <img src="img/continue.png" id="playAgain">
+                <div class="winner">
+                    <div id="playerWin"></div>
+                    <div id="nameWinner"></div>
+                    <div id="gifWinner"></div>
+                </div>
+
+                <div class="row">
+                    <div class="imageContinue">
+                        <img src="img/continue.png" id="playAgain">
+                    </div>
                 </div>
             </div>
         </div>
