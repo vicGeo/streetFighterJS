@@ -57,11 +57,6 @@
 
 /* Pantalla 02 Selección de personajes */
 
-.container-fluid.screen02 {
-    background-image: url(/img/characterSelectScreen.png);
-    background-size: cover;
-}
-
 .avatar {
     border: 1px solid #fff;
     margin: 3px;
