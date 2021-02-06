@@ -54,3 +54,62 @@
 .textStart {
     cursor: pointer;
 }
+
+/* Pantalla 02 Selección de personajes */
+
+.container-fluid.screen02 {
+    background-image: url(/img/characterSelectScreen.png);
+    background-size: cover;
+}
+
+.avatar {
+    border: 1px solid #fff;
+    margin: 3px;
+}
+
+.avatar2 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+.charactersFila1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.charactersFila2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#fighter2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#fighter1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#prueba {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Pantalla 03 Batalla por turnos */
