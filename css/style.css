@@ -145,4 +145,30 @@
     display: flex;
 }
 
+.stats {
+    width: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 /* Pantalla 03 Batalla por turnos */
+
+.battle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.battle1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.battle2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 1rem;
+}

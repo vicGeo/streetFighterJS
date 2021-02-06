@@ -95,10 +95,36 @@ let selectCharacter = (character) => {
 
         let imagePlayer2 = document.getElementById("fighter2");
         let namePlayer2 = document.getElementById("namePlayer2")
+        let fightImage = document.getElementById("stats");
 
         imagePlayer2.innerHTML = `<img class="fighter2" src="img/characters/player2/${player2.name}-stay-p2.gif">`
         namePlayer2.innerHTML = `<img class="namePlayer1" src="img/${player2.name}_name.png">`
+        fightImage.innerHTML = `<img class="stats" src="img/fightScreen02.png">`
+
+        //Cargar player1 y player2 en la pantalla3
+
+        let showPlayer1 = document.getElementById("battle1");
+        let showPlayer2 = document.getElementById("battle2");
+
+        showPlayer1.innerHTML = `<img class="fighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
+        showPlayer2.innerHTML = `<img class="fighter1" src="img/characters/player2/${player2.name}-stay-p2.gif">`
+
+        //LLamamos a la funcion delay para cambiar de pantalla con 1s de retraso
+
+        resolveIn(1000).then(delay => {
+            changeScreen("fase2", "fase3");
+        })
 
     }
 };
+
+
+
+
+
+
+//Funcion delay
+
+const resolveIn = delay =>
+new Promise(res => setTimeout(() => res(delay), delay));
 
