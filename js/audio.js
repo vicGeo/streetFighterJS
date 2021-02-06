@@ -4,3 +4,9 @@ let play = () => {
     document.getElementById("audio").play()
 
 }
+
+// //Audio de elección de personajes
+// let playCharacter = () => {
+//     document.getElementById("screen02").playCharacter()
+
+// }

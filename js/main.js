@@ -16,7 +16,7 @@ class Fighter {
     }
 
     specialAttack(enemy) {
-        enemy.life -= (this.strength * 0.5 + this.strength) - enemy.defense;
+        enemy.life -= (this.strength * 0.5) - enemy.defense;
     }
 
 };
@@ -111,11 +111,44 @@ let selectCharacter = (character) => {
 
         //LLamamos a la funcion delay para cambiar de pantalla con 1s de retraso
 
-        resolveIn(1000).then(delay => {
+        resolveIn(1300).then(delay => {
             changeScreen("fase2", "fase3");
         })
 
     }
+};
+
+//Función atacar en la pantalla3
+
+const damage = () => {
+
+    let turn = Math.floor(Math.random() * 2);
+    let superAttack = Math.floor(Math.random() * 5)
+    let infoAttack = document.getElementById("infoPlayer");
+    let healthPlayer1 = document.getElementById("healthPlayer1");
+    let healthPlayer2 = document.getElementById("healthPlayer2");
+
+    if(turn == 0) {
+        if(superAttack >= 3) {
+            player1.specialAttack(player2);
+            infoAttack.innerHTML = `${player1.name} hits with special attack ${player2.name}`;
+        } else {
+            player2.attack(player1);
+            infoAttack.innerHTML = `${player2.name} hits ${player1.name}`;
+
+        }
+    } else {
+        if(superAttack >= 4) {
+            player2.specialAttack(player1);
+            infoAttack.innerHTML = `${player2.name} hits with special attack ${player1.name}`;
+
+        } else {
+            player1.attack(player2);
+            infoAttack.innerHTML = `${player1.name} hits ${player2.name}`;
+        }
+    }
+    // console.log(player1.life);
+    // console.log(player2.life);
 };
 
 

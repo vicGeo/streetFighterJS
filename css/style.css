@@ -14,6 +14,11 @@
 
 /* Pantalla 01 Intro juego */
 
+#fase1 {
+    background: #000;
+}
+
+
 .container-fluid.screen01 {
     display: flex;
     justify-content: center;
@@ -56,6 +61,11 @@
 }
 
 /* Pantalla 02 Selección de personajes */
+
+
+#fase2 {
+    background: #000;
+}
 
 .avatar {
     border: 1px solid #fff;
@@ -154,21 +164,41 @@
 
 /* Pantalla 03 Batalla por turnos */
 
-.battle {
+#battle {
     display: flex;
     justify-content: space-between;
 }
 
-.battle1 {
+.battle1 img{
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
-.battle2 {
-    justify-content: flex-start;
-    align-items: flex-start;
+.battle2 img{
+    justify-content: flex-end;
+    align-items: flex-end;
     display: flex;
-    margin-bottom: 1rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+#buttonAttack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonAttack img{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttonAttack img:hover {
+    transform: scale(1.3);
 }

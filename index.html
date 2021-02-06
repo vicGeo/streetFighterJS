@@ -20,7 +20,7 @@
                 <img src="img/logo.png">
             </div>
             <div class="introScreen01">
-                <img onmouseover="play()" src="img/screen02-logo.jpg" alt="">
+                <img onmouseover="play()" src="img/screen02-logo.jpg">
                 <audio id="audio" src="assets/audio/Hadouken.mp3"></audio>
             </div>
             <div class="textStart">
@@ -34,9 +34,7 @@
     <div class="container-fluid screen02" id="fase2" style="display: none;">
         <div class="row">
             <div class="screen02">
-                <div class="imageSelect">
-                    <img src="img/characterSelect.png">
-                </div>
+                <div class="imageSelect"></div>
                 <div class="charactersFila1">
                     <div class="gridPlayer01" onclick="selectCharacter('Ken')" id="Ken"><img class="avatar"
                             src="/img/characters/ken-portrait.gif"></div>
@@ -82,11 +80,9 @@
                         <div class="message" id="mensaje"></div>
 
                         <div class="col-sm-12 imgPlayer" id="fighter">
-                            <div class="fighter1" id="fighter1">
-                            </div>
+                            <div class="fighter1" id="fighter1"></div>
                             <div class="stats" id="stats"></div>
-                            <div class="fighter2" id="fighter2">
-                            </div>
+                            <div class="fighter2" id="fighter2"></div>
 
                         </div>
                     </div>
@@ -103,24 +99,24 @@
                     <div class="row">
                         <div class="col-sm-12 battlePlayer" id="battle">
                             <div class="battle1" id="battle1"></div>
-                            <div class="buttonAttack" id="buttonAttack"></div>
+
+                            <div class="infoPlayer" id="infoPlayer"></div>
+
                             <div class="battle2" id="battle2"></div>
 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="buttonAttack" id="buttonAttack" onclick="damage()">
+                            <img src="img/attackPunch.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </div>
+
+    <!-- Pantalla 04 ganador y reincio -->
 
 
     <script src="js/main.js"></script>
