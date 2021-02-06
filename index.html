@@ -20,11 +20,53 @@
                     <audio id="audio" src="assets/audio/Hadouken.mp3"></audio>
                 </div>
                 <div class="textStart">
-                    <h1 onclick="changeScreen(2)">INSERT COIN</h1>
+                    <h1 onclick="changeScreen('fase1', 'fase2')">INSERT COIN</h1>
                     <audio id="audio" src="assets/audio/Hadouken.mp3"></audio>
                 </div>
             </div>
         </section>
+
+            <!-- Pantalla 02 Selección de personajes -->
+    <div class="container-fluid screen02" id="fase2" style="display: none;">
+        <div class="row">
+            <div class="screen02">
+                <div class="charactersFila1">
+                    <div class="gridPlayer01" onclick="selectPersonaje('Ken')" id="Ken"><img class="avatar"
+                            src="/img/characters/ken-portrait.gif"></div>
+                    <div class="gridPlayer02" onclick="selectPersonaje('Balrog')" id="Balrog"><img class="avatar"
+                            src="/img/characters/balrog-portrait.gif"></div>
+                    <div class="gridPlayer03" onclick="selectPersonaje('Chunli')" id="Chunli"><img class="avatar"
+                            src="/img/characters/chunli-portrait.gif"></div>
+                    <div class="gridPlayer04" onclick="selectPersonaje('Blanka')" id="Blanka"><img class="avatar"
+                            src="/img/characters/blanka-portrait.gif"></div>
+                </div>
+                <div class="charactersFila2">
+                    <div class="gridPlayer05" onclick="selectPersonaje('Ryu')" id="Ryu"><img class="avatar"
+                            src="/img/characters/ryu-portrait.gif"></div>
+                    <div id="Balrog"><img class="avatar" src="/img/characters/guile-portrait.gif"></div>
+                    <div id="Chunli"><img class="avatar" src="/img/characters/zangief-portrait.gif"></div>
+                    <div id="Blanka"><img class="avatar" src="/img/characters/honda-portrait.gif"></div>
+                </div>
+
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="message" id="mensaje"></div>
+
+                        <div class="col-sm-4 imgPlayer01" id="fighter1">
+
+                        </div>
+                        <div class="col-sm-4" id="prueba"><img src="" alt=""></div>
+                        <div class="col-sm-4 imgPlayer02" id="fighter2"></div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
     <script src="js/audio.js"></script>
