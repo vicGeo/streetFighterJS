@@ -276,6 +276,7 @@ progress[value] {
 
 progress {
     -webkit-appearance: none;
+    appearance: none;
 }
 
 progress::-moz-progress-bar {
@@ -315,6 +316,12 @@ progress::-webkit-progress-value {
     margin-top: 1rem;
 }
 
-.imageContinue {
-    margin-top: 2rem;
+.imageContinue img{
+    margin-top: 3rem;
+}
+
+#playAgain {
+    cursor: pointer;
+    flex-direction: column;
+    text-align: center;
 }

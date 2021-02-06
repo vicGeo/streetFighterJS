@@ -135,7 +135,7 @@ const damage = () => {
     if (turn == 0) {
         if (superAttack >= 3) {
             player1.specialAttack(player2);
-            infoAttack.innerHTML = `${player1.name} hits with special attack ${player2.name}`;
+            infoAttack.innerHTML = `${player1.name} hits with special attack`;
         } else {
             player2.attack(player1);
             infoAttack.innerHTML = `${player2.name} hits ${player1.name}`;
@@ -144,7 +144,7 @@ const damage = () => {
     } else {
         if(superAttack >= 4) {
             player2.specialAttack(player1);
-            infoAttack.innerHTML = `${player2.name} hits with special attack ${player1.name}`;
+            infoAttack.innerHTML = `${player2.name} hits with special attack`;
 
         } else {
             player1.attack(player2);
