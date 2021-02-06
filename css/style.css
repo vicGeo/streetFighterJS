@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* font-family: 'Press Start 2P', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    background: #000;
+}
+
+/* Pantalla 01 Intro juego */
+
+.container-fluid.screen01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textStart {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.screen01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoScreen01 {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.introScreen01 img{
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 400px;
+}
+
+.textStart {
+    cursor: pointer;
+}
