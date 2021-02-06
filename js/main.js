@@ -69,3 +69,30 @@ const changeScreen = (phase, newPhase) => {
     nextScreen.style.display = "block";
 
 };
+
+//Función selección de jugador
+
+let selectCharacter = (character) => {
+
+    if(player1 =="") {
+        player1 = allplayers[character];
+
+        document.getElementById(character).className = "avatar2";
+        document.getElementById(character).onclick = "";
+
+        let imagePlayer1 = document.getElementById("fighter1");
+
+        imagePlayer1.innerHTML = `<img class="fighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
+
+    } else {
+        player2 = allplayers[character];
+
+        document.getElementById(character).className = "avatar2";
+        document.getElementById(character).onclick = "";
+
+        let imagePlayer2 = document.getElementById("fighter2");
+
+        imagePlayer2.innerHTML = `<img class="fighter2" src="img/characters/player2/${player2.name}-stay-p2.gif">`
+    }
+};
+

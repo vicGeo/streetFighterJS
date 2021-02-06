@@ -68,6 +68,19 @@
 
 }
 
+.screen02 {
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .charactersFila1 {
     display: flex;
     align-items: center;
@@ -90,15 +103,20 @@
     font-size: 2rem;
 }
 
-#fighter2 {
+#fighter {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
 }
-#fighter1 {
-    display: flex;
+
+.fighter1 {
     justify-content: flex-start;
     align-items: flex-start;
+    display: flex;
+}
+.fighter2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
 }
 
 #prueba {
