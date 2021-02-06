@@ -8,7 +8,24 @@
     <title>Street Fighter</title>
 </head>
 <body>
-    
+        <!-- Pantalla 01 Intro juego -->
+
+        <section class="screen01" id="fase1">
+            <div class="container-fluid screen01">
+                <div class="logoScreen01">
+                    <img src="img/logo.png">
+                </div>
+                <div class="introScreen01">
+                    <img onclick="play()" src="img/screen02-logo.jpg" alt="">
+                    <audio id="audio" src="assets/audio/Hadouken.mp3"></audio>
+                </div>
+                <div class="textStart">
+                    <h1 onclick="changeScreen(2)">INSERT COIN</h1>
+                    <audio id="audio" src="assets/audio/Hadouken.mp3"></audio>
+                </div>
+            </div>
+        </section>
+
     <script src="js/main.js"></script>
     <script src="js/audio.js"></script>
 </body>
