@@ -40,3 +40,32 @@ let fighter12 = new Fighter("Bison",250,70,70,5);
 let player1 = "";
 
 let player2 = "";
+
+//Traductor
+
+let allplayers = {
+    "Ryu": fighter1,
+    "Ken": fighter2,
+    "Chunli": fighter3,
+    "Blanka": fighter4,
+    "Zangief": fighter5,
+    "Guile": fighter6,
+    "Honda": fighter7,
+    "Dhalsim": fighter8,
+    "Balrog": fighter9,
+    "Vega": fighter10,
+    "Sagat": fighter11,
+    "Bison": fighter12
+};
+
+//Función cambio de pantalla
+
+const changeScreen = (phase, newPhase) => {
+
+    currentScreen = document.getElementById(phase);
+    nextScreen = document.getElementById(newPhase);
+
+    currentScreen.style.display = "none";
+    nextScreen.style.display = "block";
+
+};
