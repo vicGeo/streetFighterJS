@@ -196,8 +196,6 @@ if (player2.life < 1) {
 
 };
 
-
-
 //Funcion RESET
 
 const reset = document.getElementById('playAgain');
@@ -205,9 +203,6 @@ const reset = document.getElementById('playAgain');
 reset.addEventListener('click', () => {
     window.location.reload();
 })
-
-
-
 
 
 
