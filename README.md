@@ -4,6 +4,7 @@
 
 <p align="center">
 <img src="https://www.fightersgeneration.com/characters2/ken-intro6.gif">
+https://vicgeo.github.io/streetFighterJS/
 </p>
 
 <hr />
@@ -56,6 +57,3 @@
 > En la selección de personaje cuando hacemos el hover que salga además de las características una pequeña imagen del jugador y la bandera de su país
 
 > Que funcione la etiqueta "progress" en Chrome
-
-
-
