@@ -142,6 +142,7 @@ let selectCharacter = (character) => {
     }
 };
 
+
 //Función atacar en la pantalla3
 
 const damage = () => {
@@ -186,7 +187,6 @@ const damage = () => {
     fighterWin();
 
 };
-
 
 //Barra de vida del jugador
 
