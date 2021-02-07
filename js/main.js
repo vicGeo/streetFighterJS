@@ -201,7 +201,7 @@ if (player2.life < 1) {
     winnerGif.innerHTML = `<img id="winnerGif" src=img/characters/winner/${player1.name}-win.gif>`;
     winnerName.innerHTML = `${player1.name} wins`;
 
-    resolveIn(1200).then(delay => {
+    resolveIn(1000).then(delay => {
 
         changeScreen("fase3","fase4");
 
