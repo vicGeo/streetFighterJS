@@ -104,8 +104,8 @@ let selectCharacter = (character) => {
         namePlayer1 = document.getElementById("namePlayer1")
 
 
-        imagePlayer1.innerHTML = `<img class="fighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
-        namePlayer1.innerHTML = `<img class="namePlayer1" src="img/${player1.name}_name.png">`
+        imagePlayer1.innerHTML = `<img class="fighter1" src="../img/characters/player1/${player1.name}-stay-p1.gif">`
+        namePlayer1.innerHTML = `<img class="namePlayer1" src="../img/${player1.name}_name.png">`
 
     } else {
         player2 = allplayers[character];
@@ -117,9 +117,9 @@ let selectCharacter = (character) => {
         namePlayer2 = document.getElementById("namePlayer2")
         fightImage = document.getElementById("stats");
 
-        imagePlayer2.innerHTML = `<img class="fighter2" src="img/characters/player2/${player2.name}-stay-p2.gif">`
-        namePlayer2.innerHTML = `<img class="namePlayer1" src="img/${player2.name}_name.png">`
-        fightImage.innerHTML = `<img class="stats" src="img/fightScreen02.png">`
+        imagePlayer2.innerHTML = `<img class="fighter2" src="../img/characters/player2/${player2.name}-stay-p2.gif">`
+        namePlayer2.innerHTML = `<img class="namePlayer1" src="../img/${player2.name}_name.png">`
+        fightImage.innerHTML = `<img class="stats" src="../img/fightScreen02.png">`
 
         //Cargar player1 y player2 en la pantalla3
 
@@ -128,10 +128,10 @@ let selectCharacter = (character) => {
         battlePlayer1 = document.getElementById("battleNameP1")
         battlePlayer2 = document.getElementById("battleNameP2")
 
-        showPlayer1.innerHTML = `<img class="battleFighter1" src="img/characters/player1/${player1.name}-stay-p1.gif">`
-        showPlayer2.innerHTML = `<img class="battleFighter2" src="img/characters/player2/${player2.name}-stay-p2.gif">`
-        battlePlayer1.innerHTML = `<img class=battleImageP1" src="img/${player1.name}_name.png">`
-        battlePlayer2.innerHTML = `<img class=battleImageP2" src="img/${player2.name}_name.png">`
+        showPlayer1.innerHTML = `<img class="battleFighter1" src="../img/characters/player1/${player1.name}-stay-p1.gif">`
+        showPlayer2.innerHTML = `<img class="battleFighter2" src="../img/characters/player2/${player2.name}-stay-p2.gif">`
+        battlePlayer1.innerHTML = `<img class=battleImageP1" src="../img/${player1.name}_name.png">`
+        battlePlayer2.innerHTML = `<img class=battleImageP2" src="..//img/${player2.name}_name.png">`
 
         //LLamamos a la funcion delay para cambiar de pantalla con 1s de retraso
 
@@ -197,8 +197,8 @@ winnerName = document.getElementById("nameWinner");
 winnerGif = document.getElementById("gifWinner");
 
 if (player2.life < 1) {
-    winner.innerHTML = `<img id="winnerImage" src=img/characters/winner/${player1.name}-win2.png>`;
-    winnerGif.innerHTML = `<img id="winnerGif" src=img/characters/winner/${player1.name}-win.gif>`;
+    winner.innerHTML = `<img id="winnerImage" src="../img/characters/winner/${player1.name}-win2.png">`;
+    winnerGif.innerHTML = `<img id="winnerGif" src="../img/characters/winner/${player1.name}-win.gif">`;
     winnerName.innerHTML = `${player1.name} wins`;
 
     resolveIn(1000).then(delay => {
@@ -208,8 +208,8 @@ if (player2.life < 1) {
     })
 
     } else if (player1.life < 1) {
-        winner.innerHTML = `<img id="winnerImage" src=img/characters/winner/${player2.name}-win2.png>`;
-        winnerGif.innerHTML = `<img id="winnerGif" src=img/characters/winner/${player2.name}-win.gif>`;
+        winner.innerHTML = `<img id="winnerImage" src="../img/characters/winner/${player2.name}-win2.png">`;
+        winnerGif.innerHTML = `<img id="winnerGif" src="../img/characters/winner/${player2.name}-win.gif">`;
         winnerName.innerHTML = `${player2.name} wins`;
 
         resolveIn(1200).then(delay => {
