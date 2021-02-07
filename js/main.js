@@ -74,8 +74,8 @@ const changeScreen = (phase, newPhase) => {
 
 let hoverCharacter = (character) => {
     let fighter = allplayers[character];
-    showStatsP1 = document.getElementById("stats");
-    showStatsP2 = document.getElementById("stats");
+    showStatsP1 = document.getElementById("hoverStats");
+    showStatsP2 = document.getElementById("hoverStats");
 
     if(player1 == "") {
         showStatsP1.innerHTML = `Name: ${fighter.name} </br>
