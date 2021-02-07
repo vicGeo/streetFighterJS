@@ -4,7 +4,10 @@
 
 <p align="center">
 <img src="https://www.fightersgeneration.com/characters2/ken-intro6.gif">
-https://vicgeo.github.io/streetFighterJS/
+</p>
+
+<p align="center">
+<h1>https://vicgeo.github.io/streetFighterJS/</h1>
 </p>
 
 <hr />
