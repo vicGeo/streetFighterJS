@@ -259,6 +259,7 @@
     align-items: flex-start;
     margin-left: 5rem;
     margin-top: 2rem;
+    flex-direction: column;
 }
 .healthPlayer2 {
     display: flex;
@@ -267,6 +268,7 @@
     align-items: flex-end;
     margin-right: 5rem;
     margin-top: 2rem;
+    flex-direction: column;
 }
 
 progress:not([value]) {

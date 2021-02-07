@@ -150,7 +150,9 @@ const damage = () => {
     superAttack = Math.floor(Math.random() * 5)
     infoAttack = document.getElementById("infoPlayer");
     healthPlayer1 = document.getElementById("healthPlayer1");
+    showHP1 = document.getElementById("showHealthP1");
     healthPlayer2 = document.getElementById("healthPlayer2");
+    showHP2 = document.getElementById("showHealthP2");
 
     if (turn == 0) {
         if (superAttack == 5) {
@@ -170,6 +172,7 @@ const damage = () => {
             player1.attack(player2);
             infoAttack.innerHTML = `${player1.name} hits ${player2.name}`;
         }
+
     };
 
 
@@ -177,6 +180,9 @@ const damage = () => {
     // console.log(player2.life);
     healthPlayer1.value = `${player1.life}`;
     healthPlayer2.value = `${player2.life}`;
+    showHP1.innerHTML = `HP ${player1.life}`;
+    showHP2.innerHTML = `HP ${player2.life}`;
+
     fighterWin();
 
 };
