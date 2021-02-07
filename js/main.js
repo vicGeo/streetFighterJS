@@ -173,8 +173,8 @@ const damage = () => {
     };
 
 
-    console.log(player1.life);
-    console.log(player2.life);
+    // console.log(player1.life);
+    // console.log(player2.life);
     healthPlayer1.value = `${player1.life}`;
     healthPlayer2.value = `${player2.life}`;
     fighterWin();
@@ -226,7 +226,7 @@ reset.addEventListener('click', () => {
 
 
 
-//Funcion delay
+//Funcion DELAY
 
 const resolveIn = delay =>
 new Promise(res => setTimeout(() => res(delay), delay));
